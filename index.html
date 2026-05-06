@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Path | Enterprise Engineering for Texas Businesses</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="site-wrapper">
+
+  <div class="top-nav-area">
+    <div class="announcement-bar">
+      Serving Abilene, Austin, and across Texas.
+    </div>
+
+    <header>
+      <div class="logo">
+        <a href="#"><img src="logo.png" alt="Happy Path Logo" class="logo-img"></a>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="mailto:contact@happypath.io">Contact</a>
+      </nav>
+    </header>
+  </div>
+
+  <main class="snap-container">
+    <section class="hero reveal active">
+      <div class="container">
+        <h1>Modernize Your Operations without the Overhead.</h1>
+        <p class="hero-subline">We deploy AI-accelerated engineering to automate your manual workflows and scale your business with enterprise-grade reliability.</p>
+        <div class="hero-tags">Simple • Transparent • Reliable</div>
+        <div class="hero-ctas">
+          <a href="mailto:contact@happypath.io" class="cta-button">Book an Efficiency Audit</a>
+          <a href="#services" class="cta-secondary">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach-section reveal">
+      <div class="container">
+        <h2>Eliminate the "Messy Middle"</h2>
+        <p class="approach-lead">Still using spreadsheets to track everything? Manually copying data from emails to your database?</p>
+        <div class="approach-context">
+          <p>You don't need more staff; you need better systems. Most businesses suffer from a web of fragmented tools that don't communicate. We provide the antidote: intuitive architecture, automated pipelines, and legacy systems modernized for the cloud.</p>
+          <p style="margin-top: 1.5rem; color: var(--accent-refined); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;">
+            Legacy to Cloud • Manual to Automated • Complex to Simple
+          </p>
+          <p style="margin-top: 1.5rem;">Based in Abilene, we serve as your local engineering partner, handling the technical complexity so you can focus on growth. From small local shops to large enterprises, we find the most direct path to your success.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services reveal" id="services">
+      <div class="services-container">
+        <h2>Core Engineering Services</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <h3>Workflow Automation</h3>
+            <p>We architect high-reliability pipelines that connect your critical tools, eliminating data silos and reclaiming hours of manual work every week.</p>
+          </div>
+          <div class="service-card">
+            <h3>Legacy Modernization</h3>
+            <p>Transition from fragile VMs to resilient, containerized cloud environments. We port mission-critical .NET applications to modern standards with zero downtime.</p>
+          </div>
+          <div class="service-card">
+            <h3>Fractional CTO</h3>
+            <p>Strategic technical leadership for growing teams. Get senior-level architectural oversight and roadmap planning without the executive-level overhead.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="managed-section reveal">
+      <div class="managed-content">
+        <h2>Zero Overhead. Total Ownership.</h2>
+        <p>We believe elite technology should be accessible, not pretentious. We skip the buzzwords to focus on one thing: <strong>making your life easier</strong> through fully managed, end-to-end service.</p>
+        
+        <div class="managed-grid">
+          <div class="managed-item">
+            <h4>No Technical Debt</h4>
+            <p>We handle the heavy lifting—infrastructure, updates, and security. You get the benefits of a modern tech stack without needing a technical degree to run it.</p>
+          </div>
+          <div class="managed-item">
+            <h4>Direct Communication</h4>
+            <p>We speak business, not just code. We explain the 'how' and 'why' in plain English, ensuring you're always in the loop without the technical headache.</p>
+          </div>
+          <div class="managed-item">
+            <h4>Verified Integrity</h4>
+            <p>Transparency is our default. We provide simple internal auditing tools and welcome 3rd-party reviews to ensure your systems remain secure and honest.</p>
+          </div>
+          <div class="managed-item">
+            <h4>Predictable Solutions</h4>
+            <p>No hidden fees or "agency bloat." Our structured approach and Efficiency Audit process make professional engineering a reality for businesses of any scale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="texas-advantage reveal" id="about">
+      <div class="container">
+        <h2>Technical Excellence, Texas-Built</h2>
+        <p>Happy Path is a specialized engineering powerhouse serving businesses from Abilene to Austin. We combine elite technical standards with the accountability of a local partner to deliver systems that simply work.</p>
+      </div>
+    </section>
+
+    <footer class="reveal">
+      <div class="footer-content">
+        <div class="logo" style="justify-content: center; margin-bottom: 1.5rem;">
+          <a href="#"><img src="logo.png" alt="Happy Path Logo" class="logo-img"></a>
+        </div>
+        <p>Expert Engineering. Built in Texas.</p>
+        <div class="footer-links">
+          <a href="https://linkedin.com">LinkedIn</a>
+          <a href="mailto:contact@happypath.io">Email Us</a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.75rem; opacity: 0.6;">&copy; 2026 Happy Path Software Solutions. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const observerOptions = {
+      root: document.querySelector('.snap-container'),
+      threshold: 0.2,
+      rootMargin: "0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
