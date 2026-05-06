@@ -263,6 +263,62 @@ section {
   font-weight: 700;
 }
 
+.service-card p {
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+}
+
+.service-card details {
+  margin-top: 1rem;
+  border-top: 1px solid var(--slate-100);
+  padding-top: 1rem;
+}
+
+.service-card summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--accent-refined);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.service-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-card summary:hover {
+  color: #D4AF37;
+}
+
+.service-card summary::after {
+  content: '→';
+  transition: transform 0.3s ease;
+}
+
+.service-card details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.details-content {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--slate-100);
+  border-radius: 0.25rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--midnight-steel);
+}
+
+.details-content p {
+  margin-bottom: 0;
+}
+
 .managed-section {
   background-image: linear-gradient(rgba(2, 44, 34, 0.9), rgba(2, 44, 34, 0.9)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=2074');
   background-size: cover;
