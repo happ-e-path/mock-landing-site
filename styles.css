@@ -122,7 +122,7 @@ section {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('truck.png');
+  background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('images/truck.png');
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -200,7 +200,7 @@ section {
 }
 
 .approach-section {
-  background-image: linear-gradient(rgba(11, 17, 32, 0.9), rgba(11, 17, 32, 0.9)), url('city.png');
+  background-image: linear-gradient(rgba(11, 17, 32, 0.9), rgba(11, 17, 32, 0.9)), url('images/city.png');
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -225,7 +225,7 @@ section {
 }
 
 .services {
-  background-image: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)), url('work.png');
+  background-image: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)), url('images/work.png');
   background-size: cover;
   background-position: center;
 }
@@ -322,7 +322,7 @@ section {
 }
 
 .managed-section {
-  background-image: linear-gradient(rgba(2, 44, 34, 0.9), rgba(2, 44, 34, 0.9)), url('office.png');
+  background-image: linear-gradient(rgba(2, 44, 34, 0.9), rgba(2, 44, 34, 0.9)), url('images/office.png');
   background-size: cover;
   background-position: center;
   color: var(--white);
