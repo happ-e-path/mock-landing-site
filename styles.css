@@ -122,7 +122,7 @@ section {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072');
+  background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('truck.png');
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -200,7 +200,9 @@ section {
 }
 
 .approach-section {
-  background-color: #0B1120;
+  background-image: linear-gradient(rgba(11, 17, 32, 0.9), rgba(11, 17, 32, 0.9)), url('city.png');
+  background-size: cover;
+  background-position: center;
   color: var(--white);
 }
 
@@ -223,7 +225,7 @@ section {
 }
 
 .services {
-  background-image: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070');
+  background-image: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)), url('work.png');
   background-size: cover;
   background-position: center;
 }
@@ -320,7 +322,7 @@ section {
 }
 
 .managed-section {
-  background-image: linear-gradient(rgba(2, 44, 34, 0.9), rgba(2, 44, 34, 0.9)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=2074');
+  background-image: linear-gradient(rgba(2, 44, 34, 0.9), rgba(2, 44, 34, 0.9)), url('office.png');
   background-size: cover;
   background-position: center;
   color: var(--white);
