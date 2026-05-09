@@ -382,6 +382,58 @@ section {
   color: var(--text-main);
 }
 
+.founder-card {
+  margin: 3rem auto 0;
+  max-width: 800px;
+  text-align: left;
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  border-left: 4px solid var(--accent-refined);
+}
+
+.founder-card h3 {
+  color: var(--navy-deep);
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.founder-title {
+  color: var(--accent-refined);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+}
+
+.founder-bio {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.portfolio-link {
+  color: var(--navy-deep);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1rem 2rem;
+  border: 1px solid var(--slate-300);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.portfolio-link:hover {
+  background-color: var(--slate-100);
+  border-color: var(--accent-refined);
+  transform: translateY(-2px);
+}
+
 footer {
   scroll-snap-align: end;
   background-color: var(--navy-deep);
