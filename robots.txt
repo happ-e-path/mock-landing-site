@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coltonchrane.github.io/happypath-mock-landing-page/sitemap.xml
